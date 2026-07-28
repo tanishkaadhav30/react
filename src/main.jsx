@@ -6,15 +6,16 @@ import Contact from './views/Contact';
 import Notfound from './views/Notfound';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import BookCard from './components/BookCard/BookCard';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>} />
-       <Route path="/About" element={<About/>} />
-        <Route path="/Contact" element={<Contact/>} />
-         <Route path="/Notfound" element={<Notfound/>} />  
+    <Route path="/about" element={<About/>} />
+    <Route path="/contact" element={<Contact/>} />
+    <Route path="/notfound" element={<Notfound/>} />
     </Routes>
       <Footer/>
   </BrowserRouter>
